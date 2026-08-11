@@ -129,7 +129,7 @@ var cfflinkhashtags = "false";
             }
             
             .elementor-72341 .elementor-element.elementor-element-3ccd8194:not(.elementor-motion-effects-element-type-background){
-				background-image: url("Imagens/6.8_Banner_Café-com-a-Indústria.png");
+				background-image: url("Imagens/Banner.png");
 			}
 
 			/* Protótipo Café com a Indústria: conteúdo aprovado para apresentação. */
@@ -779,25 +779,33 @@ var cfflinkhashtags = "false";
 
 			@media (min-width: 1200px) {
 				.cafe-feature-image img {
-					position: absolute;
-					top: -151px;
-					left: -45px;
-					width: 644px;
-					height: auto;
-				}
+		        position: relative;
+        left: inherit;
+        right: 0;
+        top: -60px;
+        height: auto;
+        max-width: 342px;
+    }
 			}
 
 			@media (min-width: 901px) and (max-width: 1199px) {
+				.cafe-feature-image {
+					display: flex;
+					align-items: flex-start;
+					justify-content: flex-end;
+					height: 420px;
+				}
 				.cafe-feature-image img {
-					position: absolute;
-					top: -11%;
-					left: -12%;
-					width: 138%;
+					position: relative;
+					top: -48px;
+					left: auto;
+					right: 0;
+					width: clamp(280px, 30vw, 342px);
 					height: auto;
 				}
 				.cafe-edition-visual {
-					right: -70px;
-					width: min(56vw, 540px);
+					right: clamp(-70px, -5vw, -42px);
+					width: clamp(430px, 46vw, 540px);
 				}
 			}
 
@@ -809,22 +817,25 @@ var cfflinkhashtags = "false";
 				}
 				.cafe-feature-image img {
 					position: static;
-					width: min(100%, 650px);
+					width: min(38vw, 300px);
 					height: auto;
 				}
   .cafe-edition-visual {
     top: -48px;
     right: -54px;
-					width: min(54vw, 480px);
+					width: min(46vw, 420px);
 				}
 			}
 
 @media (max-width: 767px) {
+				.cafe-feature-image img {
+					width: min(64vw, 250px);
+				}
   .cafe-edition-visual {
     position: relative;
 					top: auto;
 					right: auto;
-					width: min(100%, 626px);
+					width: min(70vw, 300px);
 					max-width: none;
 					margin: 0 auto 30px;
 					padding: 0;
@@ -1174,10 +1185,10 @@ a: visited {color: # A9A9A9;}
 
 					<h3 class="cafe-subheading">Participantes do debate</h3>
 					<div class="cafe-card-grid cafe-card-grid--four">
-						<article class="cafe-card cafe-person-card"><span class="cafe-person-photo"><img class="cafe-photo--portrait-crop" src="Imagens/01-OLAVO.png" alt="Olavo Noleto"></span><h4>Olavo Noleto</h4><p>Presidente da Agência Brasileira de Desenvolvimento Industrial (ABDI)</p></article>
-						<article class="cafe-card cafe-person-card"><span class="cafe-person-photo"><img class="cafe-photo--portrait-crop" src="Imagens/02-UALLACE.png" alt="Uallace Moreira Lima"></span><h4>Uallace Moreira Lima</h4><p>Secretário de Desenvolvimento Industrial do MDIC</p></article>
-						<article class="cafe-card cafe-person-card"><span class="cafe-person-photo"><img class="cafe-photo--portrait-crop" src="Imagens/03-BETINA.png" alt="Betina Ferraz Barbosa"></span><h4>Betina Ferraz Barbosa</h4><p>Economista-chefe do PNUD Brasil</p></article>
-						<article class="cafe-card cafe-person-card"><span class="cafe-person-photo"><img class="cafe-photo--arcuri" src="Imagens/04-ARCURI.png" alt="Reginaldo Arcuri"></span><h4>Reginaldo Arcuri</h4><p>Presidente executivo do Grupo FarmaBrasil</p></article>
+						<article class="cafe-card cafe-person-card"><span class="cafe-person-photo"><img class="cafe-photo--portrait-crop" src="Imagens/OLAVO.png" alt="Olavo Noleto"></span><h4>Olavo Noleto</h4><p>Presidente da Agência Brasileira de Desenvolvimento Industrial (ABDI)</p></article>
+						<article class="cafe-card cafe-person-card"><span class="cafe-person-photo"><img class="cafe-photo--portrait-crop" src="Imagens/UALLACE.png" alt="Uallace Moreira Lima"></span><h4>Uallace Moreira Lima</h4><p>Secretário de Desenvolvimento Industrial do MDIC</p></article>
+						<article class="cafe-card cafe-person-card"><span class="cafe-person-photo"><img class="cafe-photo--portrait-crop" src="Imagens/BETINA.png" alt="Betina Ferraz Barbosa"></span><h4>Betina Ferraz Barbosa</h4><p>Economista-chefe do PNUD Brasil</p></article>
+						<article class="cafe-card cafe-person-card"><span class="cafe-person-photo"><img class="cafe-photo--arcuri" src="Imagens/ARCURI.png" alt="Reginaldo Arcuri"></span><h4>Reginaldo Arcuri</h4><p>Presidente executivo do Grupo FarmaBrasil</p></article>
 					</div>
 				</div>
 			</section>
@@ -1200,9 +1211,9 @@ a: visited {color: # A9A9A9;}
 				<div class="cafe-container">
 					<h2 class="cafe-heading">Notícias</h2>
 					<div class="cafe-news-grid">
-						<article class="cafe-news-card"><div class="cafe-news-thumb"><img class="cafe-photo--olavo" src="Imagens/01-OLAVO.png" alt="Registro do Café com a Indústria"></div><div class="cafe-news-body"><small>Notícia relacionada</small><h3>Título da notícia sobre o Café com a Indústria</h3><span>Leia mais →</span></div></article>
-						<article class="cafe-news-card"><div class="cafe-news-thumb"><img class="cafe-photo--uallace" src="Imagens/02-UALLACE.png" alt="Registro do Café com a Indústria"></div><div class="cafe-news-body"><small>Notícia relacionada</small><h3>Título da notícia sobre desenvolvimento industrial</h3><span>Leia mais →</span></div></article>
-						<article class="cafe-news-card"><div class="cafe-news-thumb"><img class="cafe-photo--arcuri" src="Imagens/04-ARCURI.png" alt="Registro do Café com a Indústria"></div><div class="cafe-news-body"><small>Notícia relacionada</small><h3>Título da notícia sobre inovação e produtividade</h3><span>Leia mais →</span></div></article>
+						<article class="cafe-news-card"><div class="cafe-news-thumb"><img class="cafe-photo--olavo" src="Imagens/Foto_Noticias.png" alt="Registro do Café com a Indústria"></div><div class="cafe-news-body"><small>Notícia relacionada</small><h3>Título da notícia sobre o Café com a Indústria</h3><span>Leia mais →</span></div></article>
+						<article class="cafe-news-card"><div class="cafe-news-thumb"><img class="cafe-photo--uallace" src="Imagens/Foto_Noticias.png" alt="Registro do Café com a Indústria"></div><div class="cafe-news-body"><small>Notícia relacionada</small><h3>Título da notícia sobre desenvolvimento industrial</h3><span>Leia mais →</span></div></article>
+						<article class="cafe-news-card"><div class="cafe-news-thumb"><img class="cafe-photo--arcuri" src="Imagens/Foto_Noticias.png" alt="Registro do Café com a Indústria"></div><div class="cafe-news-body"><small>Notícia relacionada</small><h3>Título da notícia sobre inovação e produtividade</h3><span>Leia mais →</span></div></article>
 					</div>
 					<div class="cafe-news-footer"><span class="cafe-news-button">Ver mais notícias</span></div>
 				</div>
