@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -138,10 +138,14 @@ var cfflinkhashtags = "false";
 			}
 
 			#landing-page-capa {
-				position: relative;
-				background-repeat: no-repeat !important;
-				background-position: center !important;
-				background-size: cover !important;
+			
+    position: relative;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: auto;
+    top: 22px;
+    right: 3px;
+
 			}
 			#landing-page-capa .cafe-hero-button {
 				position: absolute;
@@ -179,7 +183,7 @@ var cfflinkhashtags = "false";
 			.cafe-section--soft { background: var(--cafe-surface); }
 			.cafe-container { width: min(1180px, 100%); margin: 0 auto; }
 			.cafe-container--narrow { width: min(920px, 100%); }
-			#sobre { padding-bottom: 32px; }
+			#sobre { padding-bottom: 82px; }
 			#proxima-edicao { padding-top: 80px; }
 			#temas,
 			#noticias { padding-top: 0; }
@@ -463,8 +467,8 @@ var cfflinkhashtags = "false";
 				flex: 0 0 auto;
 				display: grid;
 				place-items: center;
-				width: 46px;
-				height: 46px;
+				    width: 60px;
+    height: 60px;
 				border-radius: 12px;
 				background: #edf1ff;
 				color: #5d330c;
@@ -476,12 +480,354 @@ var cfflinkhashtags = "false";
 			.cafe-edition-date {
 				display: flex;
 				align-items: center;
-				min-height: 46px;
+				min-height: 60px;
 				padding: 0 18px;
 				border-radius: 12px;
 				background: #edf1ff;
 				white-space: nowrap;
 				color: #5d330c;
+			}
+
+			.cafe-edition-meta {
+			    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 8px;
+    row-gap: 12px;
+    margin: 0 0 34px;
+			}
+			.cafe-edition-meta .cafe-edition-date-row {
+				margin: 0;
+			}
+			.cafe-edition-location-row {
+				display: inline-flex;
+				align-items: center;
+				gap: 8px;
+				margin: 0;
+				color: #5d330c;
+			}
+			.cafe-edition-location-icon {
+				flex: 0 0 auto;
+				display: grid;
+				place-items: center;
+			    width: 60px;
+    height: 60px;
+				border-radius: 12px;
+				background: #edf1ff;
+				color: #5d330c;
+			}
+			.cafe-edition-location-icon svg {
+	    width: 33px;
+    height: 28px;
+			}
+			.cafe-edition-location {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				gap: 2px;
+				min-height: 46px;
+				padding: 9px 18px 8px 18px;
+				border-radius: 12px;
+				background: #edf1ff;
+				line-height: 1.2;
+			}
+			.cafe-edition-location strong {
+				display: block;
+				margin: 0;
+				color: inherit;
+				font-size: 18px;
+				font-weight: 700;
+			}
+			.cafe-edition-location small {
+			    display: block;
+				margin: 0;
+				color: #58606f;
+				font-size: 15px;
+				font-weight: 500;
+				line-height: 1.25;
+			}
+			.cafe-edition-intro {
+				max-width: 980px;
+				font-size: 17px;
+			}
+			.cafe-program-block {
+				margin-top: 42px;
+				padding-top: 38px;
+				border-top: 1px solid #d9e0e9;
+			}
+			.cafe-program-heading {
+				margin: 0 0 20px;
+				color: var(--cafe-ink);
+				font-size: 32px;
+				font-weight: 600;
+				line-height: 1.2;
+			}
+			.cafe-program-list {
+				overflow: hidden;
+				border: 1px solid #e1e6ed;
+				border-radius: 16px;
+				background: #fff;
+			}
+			.cafe-program-item {
+				display: grid;
+				grid-template-columns: 84px minmax(0, 1fr);
+				gap: 22px;
+				padding: 20px 24px;
+				border-bottom: 1px solid #e7ebf0;
+			}
+			.cafe-program-item:last-child {
+				border-bottom: 0;
+			}
+			.cafe-program-item > time {
+				align-self: start;
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				width: 72px;
+				min-height: 38px;
+				padding: 7px 10px;
+				border: 1px solid #e7dbd1;
+				border-radius: 999px;
+				background: #f7f1ec;
+				color: #5d330c;
+				font-size: 16px;
+				font-weight: 700;
+				line-height: 1;
+				letter-spacing: -.01em;
+				text-align: center;
+			}
+			.cafe-program-item > div {
+				min-width: 0;
+			}
+			.cafe-program-item > div > strong {
+				display: block;
+				color: #20242b;
+				font-size: 16px;
+				line-height: 1.45;
+				margin-top: 8px;
+			}
+			.cafe-program-item p {
+				margin: 7px 0 0;
+				color: #492707;
+			    font-size: 16px;
+				line-height: 1.5;
+			}
+			.cafe-program-item p b {
+				color: #20242b;
+			}
+			.cafe-program-label {
+			    display: inline-block;
+    margin: 0 0 6px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    background: #183eff;
+    padding: 4px 12px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+			}
+			.cafe-program-item--simple,
+			.cafe-program-item--break {
+				background: #f8f9fb;
+			}
+			.cafe-program-item--panel {
+				background: linear-gradient(90deg, rgba(93, 51, 12, .035) 0%, rgba(93, 51, 12, 0) 52%);
+			}
+			.cafe-program-item--panel > div {
+				position: relative;
+				padding-left: 18px;
+			}
+			.cafe-program-item--panel > div::before {
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 2px;
+				bottom: 2px;
+				width: 3px;
+				border-radius: 999px;
+				background: #5d330c;
+				opacity: .72;
+			}
+			.cafe-program-item--president {
+				background: linear-gradient(90deg, rgba(35, 70, 255, .045) 0%, rgba(35, 70, 255, 0) 58%);
+			}
+			.cafe-program-item--president > time {
+				border-color: #d8dff8;
+				background: #eef1ff;
+				color: var(--cafe-blue);
+			}
+			.cafe-program-president {
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				gap: 7px 10px;
+				margin-top: 8px !important;
+			}
+			.cafe-program-president-name {
+				color: var(--cafe-blue);
+				font-weight: 700;
+			}
+			.cafe-program-president-role {
+				display: inline-flex;
+				align-items: center;
+				min-height: 24px;
+				padding: 4px 9px;
+				border-radius: 999px;
+				background: #f7f1ec;
+				color: #5d330c;
+				font-size: 14px;
+				font-weight: 700;
+				letter-spacing: .025em;
+				line-height: 1.2;
+			}
+			.cafe-participants-block .cafe-speakers-heading {
+				margin-bottom: 24px;
+		font-size: 32px;
+				font-weight: 600;
+			}
+			.cafe-participants-grid {
+				display: grid;
+				grid-template-columns: repeat(4, minmax(0, 1fr));
+				gap: 18px;
+				margin-top: 0;
+			}
+			.cafe-participant-card {
+				position: relative;
+				isolation: isolate;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				min-width: 0;
+				min-height: 258px;
+				overflow: hidden;
+				padding: 26px 22px 24px;
+				border: 1px solid #eceef2;
+				border-radius: 18px;
+				background: #fff;
+				box-shadow: 0 8px 20px rgba(16, 24, 40, .035);
+				text-align: center;
+			}
+			.cafe-participant-card::before {
+				content: none;
+			}
+			.cafe-participant-card::after {
+				content: none;
+			}
+			.cafe-participant-avatar {
+				position: relative;
+				z-index: 1;
+				flex: 0 0 102px;
+				display: grid;
+				place-items: center;
+				width: 102px;
+				height: 102px;
+				margin: 2px auto 20px;
+				overflow: hidden;
+				border: 0;
+				border-radius: 50%;
+				background: #edf1ff;
+				box-shadow: none;
+				color: var(--cafe-blue);
+			}
+			.cafe-participant-avatar-icon {
+				position: relative;
+				display: block;
+				width: 48px;
+				height: 48px;
+				opacity: .92;
+			}
+			.cafe-participant-avatar-icon::before {
+				content: "";
+				position: absolute;
+				left: 50%;
+				top: 2px;
+				width: 19px;
+				height: 19px;
+				border-radius: 50%;
+				background: currentColor;
+				transform: translateX(-50%);
+			}
+			.cafe-participant-avatar-icon::after {
+				content: "";
+				position: absolute;
+				left: 50%;
+				bottom: 1px;
+				width: 43px;
+				height: 24px;
+				border-radius: 28px 28px 8px 8px;
+				background: currentColor;
+				transform: translateX(-50%);
+			}
+			.cafe-participant-avatar img {
+				display: block;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: center;
+			}
+			.cafe-participant-copy {
+				min-width: 0;
+				width: 100%;
+			}
+			.cafe-participant-card h5 {
+				margin: 0;
+				color: var(--cafe-blue);
+				font-size: 18px;
+				font-weight: 700;
+				line-height: 1.3;
+			}
+			.cafe-participant-card h5::after {
+				content: "";
+				display: block;
+				width: 34px;
+				height: 1px;
+				margin: 12px auto 11px;
+				background: #5d330c;
+				opacity: .42;
+			}
+			.cafe-participant-card p {
+			    max-width: 235px;
+    margin: 0 auto;
+    color: #5b6472;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.52;
+			}
+			.cafe-participant-status {
+				position: absolute;
+				top: 15px;
+				left: 15px;
+				z-index: 2;
+				display: inline-flex;
+				align-items: center;
+				min-height: 26px;
+				padding: 5px 10px;
+				border-radius: 999px;
+				background: #fff;
+				color: #5d330c;
+				font-size: 10px;
+				font-weight: 700;
+				letter-spacing: .06em;
+				text-transform: uppercase;
+				box-shadow: 0 4px 12px rgba(16, 24, 40, .08);
+			}
+			.cafe-participant-card--pending {
+				border-color: #e3e6eb;
+				background: #fff;
+			}
+			.cafe-participant-card--pending .cafe-participant-avatar {
+				background: #eef1f5;
+				box-shadow: none;
+				color: #8a96ad;
+			}
+			.cafe-participant-card--pending h5 {
+				color: #6f7b92;
+			}
+			.cafe-participant-card--pending h5::after {
+				background: #8a96ad;
+				opacity: .36;
 			}
 
 			.cafe-past-grid {
@@ -719,7 +1065,8 @@ var cfflinkhashtags = "false";
 			.cafe-card p { margin: 0; font-size: 14px; line-height: 1.55; color: var(--cafe-muted); }
 			.cafe-person-card::before,
 			.cafe-theme-card::before { display: none; }
-			.cafe-person-card h4 {
+			.cafe-person-card h4,
+			.cafe-person-card h5 {
 				margin: 0 0 14px;
 				padding-bottom: 13px;
 				border-bottom: 1px solid #d9e0e9;
@@ -740,6 +1087,34 @@ var cfflinkhashtags = "false";
 				box-shadow: 0 7px 18px rgba(16, 24, 40, .12);
 			}
 			.cafe-person-photo img { display: block; width: 100%; height: 100%; object-fit: cover; }
+			.cafe-person-photo--placeholder {
+				display: grid;
+				place-items: center;
+				background: #edf1ff;
+				color: var(--cafe-blue);
+				font-size: 12px;
+				font-weight: 700;
+				text-transform: uppercase;
+				letter-spacing: .08em;
+			}
+			.cafe-speakers-note {
+				margin: 0 0 28px;
+				color: var(--cafe-muted);
+				font-size: 14px;
+				line-height: 1.6;
+			}
+			.cafe-speakers-block {
+				margin-top: 48px;
+				padding-top: 42px;
+				border-top: 1px solid #d9e0e9;
+			}
+			.cafe-speakers-heading {
+				margin: 0 0 8px;
+				color: var(--cafe-ink);
+				font-size: clamp(24px, 2.4vw, 32px);
+				font-weight: 600;
+				line-height: 1.2;
+			}
 			.cafe-person-photo .cafe-photo--portrait-crop { transform: none; object-position: center; }
 			.cafe-person-photo .cafe-photo--olavo { transform: scale(1.58); object-position: 52% 29%; }
 			.cafe-person-photo .cafe-photo--uallace { transform: scale(1.62); object-position: 48% 28%; }
@@ -815,16 +1190,38 @@ var cfflinkhashtags = "false";
 				margin-top: 10px;
 				background: rgba(22, 116, 71, .34);
 			}
+			.cafe-next-cta h4 {
+				margin: 0 0 8px;
+				color: #174d34;
+				font-size: clamp(22px, 2.4vw, 30px);
+				font-weight: 600;
+				line-height: 1.2;
+			}
+			.cafe-next-cta h4::after {
+				content: "";
+				display: block;
+				width: 46px;
+				height: 2px;
+				margin-top: 10px;
+				background: rgba(22, 116, 71, .34);
+			}
 			.cafe-callout-button {
 				flex: 0 0 auto;
 				display: inline-block;
-				padding: 12px 22px;
+				padding: 7px 50px;
 				border-radius: 999px;
-				background: #167447;
+				background: #41ad49;
 				color: #fff;
-				font-size: 13px;
+				font-size: 24px;
 				font-weight: 700;
+				letter-spacing: 3px;
 			}
+			.cafe-signup-only {
+				display: flex;
+				justify-content: center;
+				margin-top: 32px;
+			}
+			#temas { display: none; }
 
 			.cafe-news-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
 			.cafe-news-card {
@@ -845,7 +1242,17 @@ var cfflinkhashtags = "false";
 			.cafe-news-body { padding: 22px; }
 			.cafe-news-body small { color: var(--cafe-blue); font-weight: 600; }
 			.cafe-news-body h3 { margin: 10px 0 18px; font-size: 18px; line-height: 1.4; }
-			.cafe-news-body span { font-size: 13px; color: var(--cafe-blue); }
+			.cafe-news-body > span { font-size: 13px; color: var(--cafe-blue); }
+			.cafe-news-body .cafe-edition-summary {
+				margin: 0 0 18px;
+				color: var(--cafe-muted);
+				font-size: 14px;
+				line-height: 1.6;
+			}
+			.cafe-news-grid.cafe-editions-grid {
+				grid-template-columns: repeat(auto-fit, minmax(280px, 360px));
+				justify-content: center;
+			}
 			.cafe-news-footer { margin-top: 28px; text-align: center; }
 			.cafe-news-button {
 				display: inline-block;
@@ -869,6 +1276,7 @@ var cfflinkhashtags = "false";
 
 			@media (max-width: 900px) {
 				.cafe-about-grid { grid-template-columns: 1fr; }
+				.cafe-participants-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 				.cafe-edition-body {
 					grid-template-columns: minmax(0, 1.8fr) minmax(180px, .55fr);
 					column-gap: 30px;
@@ -910,7 +1318,51 @@ var cfflinkhashtags = "false";
 				.cafe-edition-visual img { aspect-ratio: 16 / 10; object-position: center 30%; }
 				.cafe-edition-calendar { width: 36px; height: 36px; border-radius: 10px; }
 				.cafe-edition-calendar svg { width: 21px; height: 21px; }
-				.cafe-edition-date { min-height: 36px; padding: 0 14px; border-radius: 10px; }
+				.cafe-edition-date { min-height: 36px; padding: 0 14px; border-radius: 10px; white-space: normal; }
+				.cafe-edition-meta { display: grid; grid-template-columns: 1fr; gap: 12px; margin-bottom: 28px; }
+				.cafe-edition-meta .cafe-edition-date-row { width: 100%; }
+				.cafe-edition-date { flex: 1; }
+				.cafe-edition-location-row { width: 100%; display: flex; align-items: stretch; }
+				.cafe-edition-location-icon { width: 36px; height: 36px; border-radius: 10px; }
+				.cafe-edition-location-icon svg { width: 21px; height: 21px; }
+				.cafe-edition-location { flex: 1; min-height: 36px; padding: 8px 14px; border-radius: 10px; }
+				.cafe-edition-location strong { font-size: 14px; }
+				.cafe-edition-location small { font-size: 11px; }
+				.cafe-edition-intro { font-size: 16px; }
+				.cafe-program-block { margin-top: 34px; padding-top: 30px; }
+				.cafe-program-item { grid-template-columns: 68px minmax(0, 1fr); gap: 14px; padding: 18px 16px; }
+				.cafe-program-item > time { width: 64px; min-height: 34px; padding: 6px 8px; font-size: 14px; }
+				.cafe-program-item--panel > div { padding-left: 14px; }
+				.cafe-program-president { gap: 6px 8px; }
+				.cafe-participants-grid { grid-template-columns: 1fr; gap: 12px; }
+				.cafe-participant-card {
+					display: grid;
+					grid-template-columns: 88px minmax(0, 1fr);
+					align-items: center;
+					min-height: 0;
+					padding: 16px 18px;
+					text-align: left;
+				}
+				.cafe-participant-card::before {
+					inset: 0 auto 0 0;
+					width: 6px;
+					height: auto;
+				}
+				.cafe-participant-card::after { top: 12px; right: 12px; width: 18px; }
+				.cafe-participant-avatar {
+					width: 78px;
+					height: 78px;
+					flex-basis: 78px;
+					margin: 0;
+					border-width: 4px;
+				}
+				.cafe-participant-avatar-icon { width: 38px; height: 38px; }
+				.cafe-participant-avatar-icon::before { width: 15px; height: 15px; }
+				.cafe-participant-avatar-icon::after { width: 34px; height: 19px; }
+				.cafe-participant-card p { max-width: none; margin: 0; }
+				.cafe-participant-status { top: 10px; left: auto; right: 40px; min-height: 22px; padding: 4px 8px; font-size: 9px; }
+				.cafe-participant-avatar { flex-basis: 56px; width: 56px; height: 56px; }
+				.cafe-participant-avatar-icon { transform: scale(.9); }
 				.cafe-abdi-shape { display: none; }
 				.cafe-past-card { grid-template-columns: 1fr; }
 				.cafe-past-thumb { min-height: 0; aspect-ratio: 16 / 10; }
@@ -937,6 +1389,8 @@ var cfflinkhashtags = "false";
 				.cafe-callout-icon { width: 44px; height: 44px; border-radius: 12px; }
 				.cafe-callout-icon svg { width: 27px; height: 27px; }
 				.cafe-callout-button { width: 100%; text-align: center; }
+				.cafe-speakers-block { margin-top: 38px; padding-top: 32px; }
+				.cafe-news-grid.cafe-editions-grid { grid-template-columns: 1fr; }
 				.cafe-photo-collage { grid-template-rows: repeat(2, 150px); }
 				.cafe-feature-image { height: 320px; }
 				.cafe-edition-number strong { font-size: 70px; }
@@ -1084,6 +1538,7 @@ var cfflinkhashtags = "false";
 			#sobre .cafe-highlight {
 				grid-row: 3;
 				padding: 32px;
+				border-radius: 70px 0 70px 0;
 				font-size: 15px;
 				line-height: 1.65;
 			}
@@ -1097,6 +1552,11 @@ var cfflinkhashtags = "false";
 				height: auto;
 				overflow: visible;
 				border-radius: 24px;
+				background: transparent;
+				position: relative;
+				padding: 35px 0 0 30px;
+				top: 15px;
+				box-sizing: border-box;
 			}
 			#sobre .cafe-feature-image img {
 				position: static;
@@ -1129,6 +1589,8 @@ var cfflinkhashtags = "false";
 					order: 3;
 					aspect-ratio: auto;
 					overflow: visible;
+					padding: 24px 0 0 20px;
+					top: 0;
 				}
 				#sobre .cafe-feature-image img {
 					width: 100%;
@@ -1141,6 +1603,16 @@ var cfflinkhashtags = "false";
 				}
 				#sobre .cafe-copy > p:last-child { order: 5; }
 			}
+
+			/* Ícones essenciais sem dependência de fontes externas. */
+			.cafe-inline-icon {
+				display: block;
+				width: 1em;
+				height: 1em;
+				overflow: visible;
+			}
+			.elementor-element-b2b67cc .cafe-inline-icon { color: #fff; }
+			#icon-redes .cafe-inline-icon { color: #183eff; }
         </style>
 		<!-- GA Google Analytics @ https://m0n.co/ga -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-BB0HWX4Y1E"></script>
@@ -1267,11 +1739,23 @@ a: visited {color: # A9A9A9;}
   }
 	
 }
+p.cafe-edition-location-row{
+	    position: relative;
+    top: 8px;
+}
 
 
 
 		</style>
-		</head>
+		
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_ApprovalStatus msdt:dt="string">0</mso:_ApprovalStatus>
+<mso:_ApprovalAssignedTo msdt:dt="string"></mso:_ApprovalAssignedTo>
+<mso:_ApprovalRespondedBy msdt:dt="string"></mso:_ApprovalRespondedBy>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
 <body data-rsssl=1 class="wp-singular page-template page-template-elementor_header_footer page page-id-72341 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor hello-elementor-default elementor-default elementor-template-full-width elementor-kit-8 elementor-page elementor-page-72341">
 
 
@@ -1286,7 +1770,7 @@ a: visited {color: # A9A9A9;}
 							<span class="elementor-grid-item" role="listitem">
 					<a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-8a64be9" href="https://www.instagram.com/abdi.digital/" target="_blank">
 						<span class="elementor-screen-only">Instagram</span>
-						<i aria-hidden="true" class="fab fa-instagram"></i>					</a>
+						<svg aria-hidden="true" class="cafe-inline-icon" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg>					</a>
 				</span>
 							<span class="elementor-grid-item" role="listitem">
 					<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-cdd7580" href="https://www.facebook.com/abdi.digital/" target="_blank">
@@ -1301,22 +1785,22 @@ a: visited {color: # A9A9A9;}
 							<span class="elementor-grid-item" role="listitem">
 					<a class="elementor-icon elementor-social-icon elementor-social-icon-x-twitter elementor-repeater-item-4edaeea" href="https://twitter.com/abdi_digital" target="_blank">
 						<span class="elementor-screen-only">X-twitter</span>
-						<i aria-hidden="true" class="fab fa-x-twitter"></i>					</a>
+						<svg aria-hidden="true" class="cafe-inline-icon" viewBox="0 0 24 24" fill="none"><path d="M5 4 19 20M19 4 5 20" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>					</a>
 				</span>
 							<span class="elementor-grid-item" role="listitem">
 					<a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-9e0593b" href="https://www.youtube.com/channel/UCRARQA0HFgoFk5uujUzJEoQ" target="_blank">
 						<span class="elementor-screen-only">Youtube</span>
-						<i aria-hidden="true" class="fab fa-youtube"></i>					</a>
+						<svg aria-hidden="true" class="cafe-inline-icon" viewBox="0 0 24 24" fill="none"><rect x="2.5" y="5.5" width="19" height="13" rx="4" stroke="currentColor" stroke-width="2"/><path d="m10 9 5 3-5 3V9Z" fill="currentColor"/></svg>					</a>
 				</span>
 							<span class="elementor-grid-item" role="listitem">
 					<a class="elementor-icon elementor-social-icon elementor-social-icon-flickr elementor-repeater-item-0c36645" href="https://www.flickr.com/photos/abdidigital/albums" target="_blank">
 						<span class="elementor-screen-only">Flickr</span>
-						<i aria-hidden="true" class="fab fa-flickr"></i>					</a>
+						<svg aria-hidden="true" class="cafe-inline-icon" viewBox="0 0 24 24"><circle cx="7" cy="12" r="4" fill="currentColor"/><circle cx="17" cy="12" r="4" fill="currentColor"/></svg>					</a>
 				</span>
 							<span class="elementor-grid-item" role="listitem">
 					<a class="elementor-icon elementor-social-icon elementor-social-icon-spotify elementor-repeater-item-7e5fd04" href="https://open.spotify.com/show/3ZDsvXQgcUwbnAPUYo0Obw?si=891fd86619554bb2&amp;nd=1&amp;dlsi=4e29342e884b4030" target="_blank">
 						<span class="elementor-screen-only">Spotify</span>
-						<i aria-hidden="true" class="fab fa-spotify"></i>					</a>
+						<svg aria-hidden="true" class="cafe-inline-icon" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/><path d="M7 9.5c3.8-1.1 7.4-.8 10.6.8M7.8 13c3-.8 6-.5 8.7.8M8.7 16.2c2.2-.5 4.4-.3 6.4.7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>					</a>
 				</span>
 							<span class="elementor-grid-item" role="listitem">
 					<a class="elementor-icon elementor-social-icon elementor-social-icon- elementor-repeater-item-aa12a98" href="https://www.tiktok.com/@abdi.digital" target="_blank">
@@ -1334,7 +1818,7 @@ a: visited {color: # A9A9A9;}
 				<div class="elementor-widget-container">
 							<div class="elementor-icon-wrapper">
 			<a class="elementor-icon" href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjU1ODIxIiwidG9nZ2xlIjpmYWxzZX0%3D">
-			<i aria-hidden="true" class="icon icon-menu-11"></i>			</a>
+			<svg aria-hidden="true" class="cafe-inline-icon" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>			</a>
 		</div>
 						</div>
 				</div>
@@ -1380,7 +1864,7 @@ a: visited {color: # A9A9A9;}
 				<div class="elementor-widget-container">
 							<div class="elementor-icon-wrapper">
 			<a class="elementor-icon elementor-animation-grow" href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjQyNTIzIiwidG9nZ2xlIjpmYWxzZX0%3D">
-			<i aria-hidden="true" class="icon icon-search2"></i>			</a>
+			<svg aria-hidden="true" class="cafe-inline-icon" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="2"/><path d="m16 16 4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>			</a>
 		</div>
 						</div>
 				</div>
@@ -1388,7 +1872,7 @@ a: visited {color: # A9A9A9;}
 				<div class="elementor-widget-container">
 							<div class="elementor-icon-wrapper">
 			<a class="elementor-icon elementor-animation-grow" href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjQyNTIzIiwidG9nZ2xlIjpmYWxzZX0%3D">
-			<i aria-hidden="true" class="fas fa-search"></i>			</a>
+			<svg aria-hidden="true" class="cafe-inline-icon" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="2"/><path d="m16 16 4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>			</a>
 		</div>
 						</div>
 				</div>
@@ -1433,30 +1917,169 @@ a: visited {color: # A9A9A9;}
 			<section class="cafe-section cafe-section--soft" id="proxima-edicao">
 				<div class="cafe-container">
 					<h2 class="cafe-heading">Próxima edição</h2>
+
 					<article class="cafe-edition-card">
 						<span class="cafe-abdi-shape" aria-hidden="true"></span>
 						<div class="cafe-copy cafe-edition-body cafe-edition-body--upcoming">
-							<h3 class="cafe-edition-theme cafe-edition-theme--upcoming"><span class="cafe-edition-theme-lead">Edição em planejamento:</span><span class="cafe-edition-theme-question">novas conversas para a indústria brasileira</span></h3>
-							<p class="cafe-edition-date-row">
-								<span class="cafe-edition-calendar" aria-hidden="true">
-									<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<rect x="3.5" y="5.5" width="17" height="15" rx="2" stroke="currentColor" stroke-width="1.8"/>
-										<path d="M8 3.5V8M16 3.5V8M3.5 10H20.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-									</svg>
-								</span>
-								<span class="cafe-edition-date">Data a confirmar</span>
-							</p>
-							<p>Esta próxima edição está em fase de planejamento e apresentará uma agenda provisória dedicada aos caminhos de transformação da indústria brasileira. A proposta inicial é reunir diferentes perspectivas para explorar desafios emergentes, novas oportunidades e possibilidades de desenvolvimento produtivo.</p>
-							<p>A programação preliminar prevê conversas sobre inovação, competitividade, sustentabilidade e novos modelos de produção. Especialistas, representantes do setor produtivo e convidados institucionais poderão participar do encontro, mas os nomes e a composição final ainda serão confirmados.</p>
-							<p>Data, formato, participantes e demais informações serão divulgados após a conclusão desta etapa de preparação. Todo o conteúdo apresentado neste card é fictício e provisório, criado exclusivamente para preservar o equilíbrio visual até a confirmação oficial da próxima edição.</p>
-							<div class="cafe-upcoming cafe-upcoming--signup">
-								<span class="cafe-status">Em breve</span>
-								<div>
-									<h3>Novas conversas estão sendo preparadas</h3>
-									<p>As informações da próxima edição serão divulgadas nesta página.</p>
-								</div>
-								<button class="cafe-upcoming-button" type="button">Inscreva-se</button>
+							<h3 class="cafe-edition-theme cafe-edition-theme--upcoming">
+								<span class="cafe-edition-theme-lead">Minerais críticos:</span>
+								<span class="cafe-edition-theme-question">como transformar o potencial brasileiro em desenvolvimento industrial e tecnológico?</span>
+							</h3>
+
+							<div class="cafe-edition-meta" aria-label="Data e local da próxima edição">
+								<p class="cafe-edition-date-row">
+									<span class="cafe-edition-calendar" aria-hidden="true">
+										<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<rect x="3.5" y="5.5" width="17" height="15" rx="2" stroke="currentColor" stroke-width="1.8"></rect>
+											<path d="M8 3.5V8M16 3.5V8M3.5 10H20.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
+										</svg>
+									</span>
+									<time class="cafe-edition-date" datetime="2026-09-02">2 de setembro de 2026 &nbsp;·&nbsp;quarta-feira</time>
+								</p>
+
+								<p class="cafe-edition-location-row">
+									<span class="cafe-edition-location-icon" aria-hidden="true">
+										<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M12 21s6-5.05 6-11a6 6 0 1 0-12 0c0 5.95 6 11 6 11Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"></path>
+											<circle cx="12" cy="10" r="2.2" stroke="currentColor" stroke-width="1.8"></circle>
+										</svg>
+									</span>
+									<span class="cafe-edition-location">
+										<strong>Auditório Capital Financial Center – Brasília</strong>
+										<small>Setor de Indústrias Gráficas, quadra 04</small>
+									</span>
+								</p>
 							</div>
+
+							<p class="cafe-edition-intro">O Brasil reúne condições estratégicas para se tornar <strong>protagonista nas cadeias globais de minerais críticos</strong>. Nesta edição do <strong>Café com a Indústria</strong>, especialistas, representantes do setor mineral e da indústria debatem os <strong>desafios e as oportunidades</strong> para ampliar a <strong>agregação de valor</strong>, impulsionar a <strong>inovação</strong> e fortalecer o <strong>desenvolvimento industrial e tecnológico</strong> do país.</p>
+
+							<section class="cafe-program-block" aria-labelledby="cafe-program-title">
+								<h4 class="cafe-program-heading" id="cafe-program-title">Programação</h4>
+								<div class="cafe-program-list">
+									<div class="cafe-program-item cafe-program-item--simple">
+										<time datetime="2026-09-02T09:30">9h30</time>
+										<div>
+											<strong>Recepção</strong>
+										</div>
+									</div>
+
+									<div class="cafe-program-item cafe-program-item--president">
+										<time datetime="2026-09-02T09:45">9h45</time>
+										<div>
+											<strong>Abertura institucional</strong>
+											<p class="cafe-program-president">
+												<span class="cafe-program-president-name">Olavo Noleto Alves</span>
+												<span class="cafe-program-president-role">Presidente&nbsp;da&nbsp;ABDI</span>
+											</p>
+										</div>
+									</div>
+
+									<div class="cafe-program-item cafe-program-item--panel">
+										<time datetime="2026-09-02T10:00">10h00</time>
+										<div>
+											<span class="cafe-program-label">Painel 1</span>
+											<strong>Minerais críticos no Brasil: potencial, investimentos e desafios para o desenvolvimento da cadeia</strong>
+											<p><b>Participantes:</b> IBRAM, ABPM, ADIMB e AMC</p>
+											<p><b>Moderação:</b> Jorge Boeira (ABDI)</p>
+										</div>
+									</div>
+
+									<div class="cafe-program-item cafe-program-item--break">
+										<time datetime="2026-09-02T10:45">10h45</time>
+										<div>
+											<strong>Coffee Break</strong>
+										</div>
+									</div>
+
+									<div class="cafe-program-item cafe-program-item--panel">
+										<time datetime="2026-09-02T11:00">11h00</time>
+										<div>
+											<span class="cafe-program-label">Painel 2</span>
+											<strong>Da mineração à indústria: tecnologia, agregação de valor e novas cadeias produtivas</strong>
+											<p><b>Participantes:</b> WEG, Grupo Moura, SENAI/PR e Bosch</p>
+											<p><b>Moderação:</b> Jorge Boeira (ABDI)</p>
+										</div>
+									</div>
+
+									<div class="cafe-program-item cafe-program-item--president">
+										<time datetime="2026-09-02T11:45">11h45</time>
+										<div>
+											<strong>Encerramento</strong>
+											<p class="cafe-program-president">
+												<span class="cafe-program-president-name">Olavo Noleto Alves</span>
+												<span class="cafe-program-president-role">Presidente&nbsp;da&nbsp;ABDI</span>
+											</p>
+										</div>
+									</div>
+								</div>
+							</section>
+
+							<div class="cafe-signup-only">
+								<span class="cafe-callout-button">Inscreva-se</span>
+							</div>
+
+							<section class="cafe-speakers-block cafe-participants-block" aria-labelledby="cafe-participants-title">
+								<h4 class="cafe-speakers-heading" id="cafe-participants-title">Participantes</h4>
+								<div class="cafe-participants-grid" aria-label="Participantes da próxima edição">
+									<article class="cafe-participant-card">
+										<span class="cafe-participant-avatar" aria-hidden="true"><span class="cafe-participant-avatar-icon"></span></span>
+										<div class="cafe-participant-copy">
+											<h5>Cinthia Rodrigues</h5>
+											<p>Gerente de Pesquisa e Desenvolvimento do IBRAM</p>
+										</div>
+									</article>
+									<article class="cafe-participant-card">
+										<span class="cafe-participant-avatar" aria-hidden="true"><span class="cafe-participant-avatar-icon"></span></span>
+										<div class="cafe-participant-copy">
+											<h5>Miguel Nery</h5>
+											<p>Diretor de Desenvolvimento Produtivo da ABPM</p>
+										</div>
+									</article>
+									<article class="cafe-participant-card">
+										<span class="cafe-participant-avatar" aria-hidden="true"><span class="cafe-participant-avatar-icon"></span></span>
+										<div class="cafe-participant-copy">
+											<h5>Roberto Xavier</h5>
+											<p>Diretor-Executivo da ADIMB</p>
+										</div>
+									</article>
+									<article class="cafe-participant-card">
+										<span class="cafe-participant-avatar" aria-hidden="true"><span class="cafe-participant-avatar-icon"></span></span>
+										<div class="cafe-participant-copy">
+											<h5>Marisa Cesar</h5>
+											<p>Presidente do Conselho da AMC</p>
+										</div>
+									</article>
+									<article class="cafe-participant-card">
+										<span class="cafe-participant-avatar" aria-hidden="true"><span class="cafe-participant-avatar-icon"></span></span>
+										<div class="cafe-participant-copy">
+											<h5>Wagner Setti</h5>
+											<p>Relações Governamentais da WEG</p>
+										</div>
+									</article>
+									<article class="cafe-participant-card">
+										<span class="cafe-participant-avatar" aria-hidden="true"><span class="cafe-participant-avatar-icon"></span></span>
+										<div class="cafe-participant-copy">
+											<h5>Eduardo Abath</h5>
+											<p>Relações Governamentais do Grupo Moura</p>
+										</div>
+									</article>
+									<article class="cafe-participant-card">
+										<span class="cafe-participant-avatar" aria-hidden="true"><span class="cafe-participant-avatar-icon"></span></span>
+										<div class="cafe-participant-copy">
+											<h5>Marcos Berton</h5>
+											<p>Gerente de Tecnologia e Inovação e Pesquisador-Chefe do SENAI/PR</p>
+										</div>
+									</article>
+									<article class="cafe-participant-card cafe-participant-card--pending">
+										<span class="cafe-participant-status">A confirmar</span>
+										<span class="cafe-participant-avatar" aria-hidden="true"><span class="cafe-participant-avatar-icon"></span></span>
+										<div class="cafe-participant-copy">
+											<h5>Bosch</h5>
+											<p>Representante a confirmar</p>
+										</div>
+									</article>
+								</div>
+							</section>
 						</div>
 					</article>
 				</div>
@@ -1465,46 +2088,32 @@ a: visited {color: # A9A9A9;}
 			<section class="cafe-section" id="edicoes-anteriores">
 				<div class="cafe-container">
 					<h2 class="cafe-heading">Edições anteriores</h2>
-					<div class="cafe-past-grid">
-						<article class="cafe-past-card">
-							<figure class="cafe-past-thumb cafe-past-thumb--edition-2026" role="img" aria-label="Participantes da edição anterior do Café com a Indústria"></figure>
-							<div class="cafe-past-content">
-								<p class="cafe-past-date">
-									<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-										<rect x="3.5" y="5.5" width="17" height="15" rx="2" stroke="currentColor" stroke-width="1.8"/>
-										<path d="M8 3.5V8M16 3.5V8M3.5 10H20.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-									</svg>
-									<time datetime="2026-08-03">3 de agosto de 2026</time>
-								</p>
-								<h3 class="cafe-past-title"><span class="cafe-past-title-lead">Brasil, país desenvolvido:</span><span class="cafe-past-title-question">quais os novos desafios e oportunidades?</span></h3>
-								<p class="cafe-past-copy">Após alcançar pela primeira vez o patamar de <strong>muito alto desenvolvimento humano</strong>, com IDHM de 0,805, o Brasil passa a discutir uma <strong>nova agenda de crescimento e transformação produtiva</strong>.</p>
-								<p class="cafe-past-copy">A primeira edição do <strong>Café com a Indústria</strong> reuniu representantes do governo, especialistas, organismos internacionais e lideranças empresariais para debater como a <strong>inovação, a produtividade e a política industrial</strong> podem contribuir para consolidar um novo ciclo de <strong>desenvolvimento econômico sustentável e inclusivo</strong>.</p>
-								<p class="cafe-past-copy">Participaram do debate o presidente da <strong>ABDI</strong>, <strong>Olavo Noleto</strong>, o secretário de Desenvolvimento Industrial do <strong>MDIC</strong>, <strong>Uallace Moreira Lima</strong>, a economista-chefe do <strong>PNUD Brasil</strong>, <strong>Betina Ferraz Barbosa</strong>, e o presidente executivo do <strong>Grupo FarmaBrasil</strong>, <strong>Reginaldo Arcuri</strong>.</p>
-								<section class="cafe-past-participants" aria-labelledby="cafe-past-participants-title">
-									<h4 class="cafe-past-participants-title" id="cafe-past-participants-title">Participantes do debate</h4>
-									<div class="cafe-past-participants-grid">
-										<article class="cafe-past-person">
-											<span class="cafe-past-person-photo"><img src="Imagens/OLAVO.png" alt="Olavo Noleto"></span>
-											<h5>Olavo Noleto</h5>
-											<p>Presidente da Agência Brasileira de Desenvolvimento Industrial (ABDI)</p>
-										</article>
-										<article class="cafe-past-person">
-											<span class="cafe-past-person-photo"><img src="Imagens/UALLACE.png" alt="Uallace Moreira Lima"></span>
-											<h5>Uallace Moreira Lima</h5>
-											<p>Secretário de Desenvolvimento Industrial do MDIC</p>
-										</article>
-										<article class="cafe-past-person">
-											<span class="cafe-past-person-photo"><img src="Imagens/BETINA.png" alt="Betina Ferraz Barbosa"></span>
-											<h5>Betina Ferraz Barbosa</h5>
-											<p>Economista-chefe do PNUD Brasil</p>
-										</article>
-										<article class="cafe-past-person">
-											<span class="cafe-past-person-photo"><img src="Imagens/ARCURI.png" alt="Reginaldo Arcuri"></span>
-											<h5>Reginaldo Arcuri</h5>
-											<p>Presidente executivo do Grupo FarmaBrasil</p>
-										</article>
-									</div>
-								</section>
+					<div class="cafe-news-grid cafe-editions-grid" aria-label="Edições anteriores do Café com a Indústria">
+						<article class="cafe-news-card">
+							<div class="cafe-news-thumb"><img src="Imagens/Foto_Edicoes_Anteriores.jpg" alt="Participantes da primeira edição do Café com a Indústria"></div>
+							<div class="cafe-news-body">
+								<small>1ª edição · <time datetime="2026-08-03">3 de agosto de 2026</time></small>
+								<h3>Brasil, país desenvolvido: quais os novos desafios e oportunidades?</h3>
+								<p class="cafe-edition-summary">Governo, especialistas e lideranças empresariais debateram desenvolvimento humano, inovação, produtividade e política industrial.</p>
+								<span>Veja como foi →</span>
+							</div>
+						</article>
+						<article class="cafe-news-card">
+							<div class="cafe-news-thumb" aria-hidden="true"><span>Lorem ipsum</span></div>
+							<div class="cafe-news-body">
+								<small>Lorem ipsum · Dolor sit amet</small>
+								<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+								<p class="cafe-edition-summary">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+								<span>Veja como foi →</span>
+							</div>
+						</article>
+						<article class="cafe-news-card">
+							<div class="cafe-news-thumb" aria-hidden="true"><span>Lorem ipsum</span></div>
+							<div class="cafe-news-body">
+								<small>Consectetur adipiscing · Tempor incididunt</small>
+								<h3>Duis aute irure dolor in reprehenderit in voluptate velit</h3>
+								<p class="cafe-edition-summary">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<span>Veja como foi →</span>
 							</div>
 						</article>
 					</div>
@@ -1525,17 +2134,6 @@ a: visited {color: # A9A9A9;}
 				</div>
 			</section>
 
-			<section class="cafe-section" id="noticias">
-				<div class="cafe-container">
-					<h2 class="cafe-heading">Notícias</h2>
-					<div class="cafe-news-grid">
-						<article class="cafe-news-card"><div class="cafe-news-thumb"><img class="cafe-photo--olavo" src="Imagens/Foto_Noticias.png" alt="Registro do Café com a Indústria"></div><div class="cafe-news-body"><small>Notícia relacionada</small><h3>Título da notícia sobre o Café com a Indústria</h3><span>Leia mais →</span></div></article>
-						<article class="cafe-news-card"><div class="cafe-news-thumb"><img class="cafe-photo--uallace" src="Imagens/Foto_Noticias.png" alt="Registro do Café com a Indústria"></div><div class="cafe-news-body"><small>Notícia relacionada</small><h3>Título da notícia sobre desenvolvimento industrial</h3><span>Leia mais →</span></div></article>
-						<article class="cafe-news-card"><div class="cafe-news-thumb"><img class="cafe-photo--arcuri" src="Imagens/Foto_Noticias.png" alt="Registro do Café com a Indústria"></div><div class="cafe-news-body"><small>Notícia relacionada</small><h3>Título da notícia sobre inovação e produtividade</h3><span>Leia mais →</span></div></article>
-					</div>
-					<div class="cafe-news-footer"><span class="cafe-news-button">Ver mais notícias</span></div>
-				</div>
-			</section>
 		</main>
 		<div class="elementor-element elementor-element-e96445a e-flex e-con-boxed e-con e-parent" data-id="e96445a" data-element_type="container" data-e-type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
 					<div class="e-con-inner">
@@ -2371,7 +2969,7 @@ interesse da Defesa</b><br></h5>				</div>
 							<span class="elementor-grid-item" role="listitem">
 					<a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-animation-grow elementor-repeater-item-8a64be9" href="https://www.instagram.com/abdi.digital/" target="_blank">
 						<span class="elementor-screen-only">Instagram</span>
-						<i aria-hidden="true" class="fab fa-instagram"></i>					</a>
+						<svg aria-hidden="true" class="cafe-inline-icon" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg>					</a>
 				</span>
 							<span class="elementor-grid-item" role="listitem">
 					<a class="elementor-icon elementor-social-icon elementor-social-icon- elementor-animation-grow elementor-repeater-item-cdd7580" href="https://www.facebook.com/abdi.digital/" target="_blank">
@@ -2386,22 +2984,22 @@ interesse da Defesa</b><br></h5>				</div>
 							<span class="elementor-grid-item" role="listitem">
 					<a class="elementor-icon elementor-social-icon elementor-social-icon-x-twitter elementor-animation-grow elementor-repeater-item-4edaeea" href="https://twitter.com/abdi_digital" target="_blank">
 						<span class="elementor-screen-only">X-twitter</span>
-						<i aria-hidden="true" class="fab fa-x-twitter"></i>					</a>
+						<svg aria-hidden="true" class="cafe-inline-icon" viewBox="0 0 24 24" fill="none"><path d="M5 4 19 20M19 4 5 20" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>					</a>
 				</span>
 							<span class="elementor-grid-item" role="listitem">
 					<a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-animation-grow elementor-repeater-item-9e0593b" href="https://www.youtube.com/channel/UCRARQA0HFgoFk5uujUzJEoQ" target="_blank">
 						<span class="elementor-screen-only">Youtube</span>
-						<i aria-hidden="true" class="fab fa-youtube"></i>					</a>
+						<svg aria-hidden="true" class="cafe-inline-icon" viewBox="0 0 24 24" fill="none"><rect x="2.5" y="5.5" width="19" height="13" rx="4" stroke="currentColor" stroke-width="2"/><path d="m10 9 5 3-5 3V9Z" fill="currentColor"/></svg>					</a>
 				</span>
 							<span class="elementor-grid-item" role="listitem">
 					<a class="elementor-icon elementor-social-icon elementor-social-icon-flickr elementor-animation-grow elementor-repeater-item-0c36645" href="https://www.flickr.com/photos/abdidigital/albums/" target="_blank">
 						<span class="elementor-screen-only">Flickr</span>
-						<i aria-hidden="true" class="fab fa-flickr"></i>					</a>
+						<svg aria-hidden="true" class="cafe-inline-icon" viewBox="0 0 24 24"><circle cx="7" cy="12" r="4" fill="currentColor"/><circle cx="17" cy="12" r="4" fill="currentColor"/></svg>					</a>
 				</span>
 							<span class="elementor-grid-item" role="listitem">
 					<a class="elementor-icon elementor-social-icon elementor-social-icon-spotify elementor-animation-grow elementor-repeater-item-a32e187" href="https://open.spotify.com/show/3ZDsvXQgcUwbnAPUYo0Obw?si=891fd86619554bb2&amp;nd=1&amp;dlsi=4e29342e884b4030" target="_blank">
 						<span class="elementor-screen-only">Spotify</span>
-						<i aria-hidden="true" class="fab fa-spotify"></i>					</a>
+						<svg aria-hidden="true" class="cafe-inline-icon" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/><path d="M7 9.5c3.8-1.1 7.4-.8 10.6.8M7.8 13c3-.8 6-.5 8.7.8M8.7 16.2c2.2-.5 4.4-.3 6.4.7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>					</a>
 				</span>
 							<span class="elementor-grid-item" role="listitem">
 					<a class="elementor-icon elementor-social-icon elementor-social-icon- elementor-animation-grow elementor-repeater-item-d44e647" href="https://www.tiktok.com/@abdi.digital" target="_blank">
@@ -2662,7 +3260,7 @@ var hasJetBlogPlaylist = 0;
     id="search-input"
     placeholder="Qual assunto da indústria é do seu interesse?"
   />
-  <i class="fas fa-search search-icon"></i>
+  <svg aria-hidden="true" class="search-icon cafe-inline-icon" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="2"/><path d="m16 16 4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
   <div id="dropdown" class="dropdown-content">
     <!-- Search results will appear here -->
   </div>
@@ -2960,7 +3558,7 @@ var hasJetBlogPlaylist = 0;
 					</div>
 			</div>
 	
-<button class="jet-ajax-search__submit" type="submit" aria-label="Search submit"><span class="jet-ajax-search__submit-icon jet-ajax-search-icon"><i aria-hidden="true" class="fas fa-search"></i></span></button>
+<button class="jet-ajax-search__submit" type="submit" aria-label="Search submit"><span class="jet-ajax-search__submit-icon jet-ajax-search-icon"><svg aria-hidden="true" class="cafe-inline-icon" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="2"/><path d="m16 16 4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span></button>
 </form>
 
 <div class="jet-ajax-search__results-area" >
