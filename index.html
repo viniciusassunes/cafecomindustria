@@ -1755,6 +1755,248 @@ p.cafe-edition-location-row{
 <mso:_ApprovalRespondedBy msdt:dt="string"></mso:_ApprovalRespondedBy>
 </mso:CustomDocumentProperties>
 </xml><![endif]-->
+
+<style id="cafe-header-responsive-fix">
+/*
+ * Café com a Indústria — ajuste responsivo do header ABDI.
+ * O desktop amplo permanece controlado pelas regras originais do site.
+ * Abaixo de 1024px usamos a composição compacta:
+ * menu | marca ABDI | busca
+ */
+@media (max-width: 1024px) {
+
+	/* Remove a barra auxiliar do desktop/tablet para não duplicar altura. */
+	.elementor-location-header .elementor-element-f52a979 {
+		display: none !important;
+	}
+
+	/* Header principal compacto. */
+	.elementor-location-header .elementor-element-86da02b {
+		position: relative !important;
+		inset: auto !important;
+		width: 100% !important;
+		min-height: 82px !important;
+		margin: 0 !important;
+		padding: 0 22px !important;
+		background: #fff !important;
+		box-shadow: none !important;
+	}
+
+	.elementor-location-header .elementor-element-86da02b > .e-con-inner {
+		display: grid !important;
+		grid-template-columns: 48px minmax(0, 1fr) 48px !important;
+		align-items: center !important;
+		gap: 14px !important;
+		width: 100% !important;
+		max-width: 1180px !important;
+		min-height: 82px !important;
+		margin: 0 auto !important;
+		padding: 0 !important;
+	}
+
+	/* No breakpoint estreito usamos somente os três elementos móveis. */
+	.elementor-location-header .elementor-element-22f62ac,
+	.elementor-location-header .elementor-element-ce96b55,
+	.elementor-location-header .elementor-element-921aa0c {
+		display: none !important;
+	}
+
+	.elementor-location-header .elementor-element-ef07565,
+	.elementor-location-header .elementor-element-8ab877c,
+	.elementor-location-header .elementor-element-d61b687 {
+		display: block !important;
+		position: static !important;
+		width: auto !important;
+		max-width: none !important;
+		margin: 0 !important;
+		padding: 0 !important;
+		transform: none !important;
+	}
+
+	/* Menu */
+	.elementor-location-header .elementor-element-ef07565 {
+		grid-column: 1 !important;
+		justify-self: start !important;
+	}
+
+	/* Marca central */
+	.elementor-location-header .elementor-element-8ab877c {
+		grid-column: 2 !important;
+		justify-self: center !important;
+		align-self: center !important;
+	}
+
+	/* Busca */
+	.elementor-location-header .elementor-element-d61b687 {
+		grid-column: 3 !important;
+		justify-self: end !important;
+	}
+
+	.elementor-location-header .elementor-element-86da02b
+	:is(.elementor-element-ef07565, .elementor-element-d61b687)
+	.elementor-widget-container,
+	.elementor-location-header .elementor-element-86da02b
+	:is(.elementor-element-ef07565, .elementor-element-d61b687)
+	.elementor-icon-wrapper {
+		display: flex !important;
+		align-items: center !important;
+		justify-content: center !important;
+		width: 100% !important;
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+
+	.elementor-location-header .elementor-element-86da02b
+	:is(.elementor-element-ef07565, .elementor-element-d61b687)
+	.elementor-icon {
+		display: flex !important;
+		align-items: center !important;
+		justify-content: center !important;
+		width: 38px !important;
+		height: 38px !important;
+		min-width: 38px !important;
+		padding: 0 !important;
+		border: 0 !important;
+		border-radius: 0 !important;
+		background: transparent !important;
+		box-shadow: none !important;
+		color: #183eff !important;
+	}
+
+	.elementor-location-header .elementor-element-86da02b
+	:is(.elementor-element-ef07565, .elementor-element-d61b687)
+	svg {
+		display: block !important;
+		width: 30px !important;
+		height: 30px !important;
+		margin: 0 !important;
+	}
+
+	/* Evita o logo crescer verticalmente junto com o container do Elementor. */
+	.elementor-location-header .elementor-element-8ab877c .elementor-widget-container,
+	.elementor-location-header .elementor-element-8ab877c .elementor-icon-wrapper,
+	.elementor-location-header .elementor-element-8ab877c .elementor-icon {
+		display: flex !important;
+		align-items: center !important;
+		justify-content: center !important;
+		width: auto !important;
+		height: auto !important;
+		margin: 0 !important;
+		padding: 0 !important;
+		border: 0 !important;
+		background: transparent !important;
+	}
+
+	.elementor-location-header .elementor-element-8ab877c svg {
+		display: block !important;
+		width: 142px !important;
+		height: auto !important;
+		max-height: 66px !important;
+		margin: 0 !important;
+	}
+
+	/*
+	 * Divisor colorido:
+	 * usa apenas a versão móvel e força a imagem a ocupar 100% da viewport.
+	 */
+	.elementor-location-header .elementor-element-4249b07 {
+		display: none !important;
+	}
+
+	.elementor-location-header .elementor-element-fd469f3 {
+		display: block !important;
+		position: relative !important;
+		width: 100% !important;
+		max-width: none !important;
+		min-height: 4px !important;
+		margin: 0 !important;
+		padding: 0 !important;
+		overflow: hidden !important;
+		line-height: 0 !important;
+	}
+
+	.elementor-location-header .elementor-element-fd469f3 > .e-con-inner,
+	.elementor-location-header .elementor-element-fd469f3 .elementor-element-22b129a,
+	.elementor-location-header .elementor-element-fd469f3 .elementor-widget-container {
+		display: block !important;
+		width: 100% !important;
+		max-width: none !important;
+		height: 4px !important;
+		min-height: 0 !important;
+		margin: 0 !important;
+		padding: 0 !important;
+		line-height: 0 !important;
+	}
+
+	.elementor-location-header .elementor-element-fd469f3 img {
+		display: block !important;
+		width: 100% !important;
+		max-width: none !important;
+		height: 4px !important;
+		margin: 0 !important;
+		object-fit: fill !important;
+	}
+
+	/* Impede espaços herdados entre header/divisor e o banner. */
+	.elementor-location-header {
+		margin-bottom: 0 !important;
+		padding-bottom: 0 !important;
+	}
+}
+
+@media (max-width: 767px) {
+	.elementor-location-header .elementor-element-86da02b {
+		min-height: 76px !important;
+		padding-inline: 18px !important;
+	}
+
+	.elementor-location-header .elementor-element-86da02b > .e-con-inner {
+		grid-template-columns: 42px minmax(0, 1fr) 42px !important;
+		gap: 10px !important;
+		min-height: 76px !important;
+	}
+
+	.elementor-location-header .elementor-element-8ab877c svg {
+		width: 126px !important;
+		max-height: 58px !important;
+	}
+
+	.elementor-location-header .elementor-element-86da02b
+	:is(.elementor-element-ef07565, .elementor-element-d61b687)
+	.elementor-icon {
+		width: 34px !important;
+		height: 34px !important;
+		min-width: 34px !important;
+	}
+
+	.elementor-location-header .elementor-element-86da02b
+	:is(.elementor-element-ef07565, .elementor-element-d61b687)
+	svg {
+		width: 27px !important;
+		height: 27px !important;
+	}
+}
+
+@media (max-width: 420px) {
+	.elementor-location-header .elementor-element-86da02b {
+		min-height: 70px !important;
+		padding-inline: 14px !important;
+	}
+
+	.elementor-location-header .elementor-element-86da02b > .e-con-inner {
+		min-height: 70px !important;
+	}
+
+	.elementor-location-header .elementor-element-8ab877c svg {
+		width: 116px !important;
+		max-height: 54px !important;
+	}
+}
+/* Ajuste Rota A: Cards Minimalistas (Sem Foto) */
+			.cafe-participant-card { min-height: auto !important; padding: 32px 24px !important; justify-content: center; }
+			@media (max-width: 767px) { .cafe-participant-card { display: flex !important; flex-direction: column !important; text-align: center !important; padding: 24px 20px !important; } }
+</style>
+
 </head>
 <body data-rsssl=1 class="wp-singular page-template page-template-elementor_header_footer page page-id-72341 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor hello-elementor-default elementor-default elementor-template-full-width elementor-kit-8 elementor-page elementor-page-72341">
 
@@ -1923,7 +2165,7 @@ p.cafe-edition-location-row{
 						<div class="cafe-copy cafe-edition-body cafe-edition-body--upcoming">
 							<h3 class="cafe-edition-theme cafe-edition-theme--upcoming">
 								<span class="cafe-edition-theme-lead">Minerais críticos:</span>
-								<span class="cafe-edition-theme-question">como transformar o potencial brasileiro em desenvolvimento industrial e tecnológico?</span>
+								<span class="cafe-edition-theme-question">potencial brasileiro para o desenvolvimento industrial e tecnológico</span>
 							</h3>
 
 							<div class="cafe-edition-meta" aria-label="Data e local da próxima edição">
@@ -1945,8 +2187,8 @@ p.cafe-edition-location-row{
 										</svg>
 									</span>
 									<span class="cafe-edition-location">
-										<strong>Auditório Capital Financial Center – Brasília</strong>
-										<small>Setor de Indústrias Gráficas, quadra 04</small>
+										<strong>Auditório Verbum (Capital Financial Center) – Brasília</strong>
+										<small>SIG Quadra 4 bloco C</small>
 									</span>
 								</p>
 							</div>
@@ -1957,58 +2199,85 @@ p.cafe-edition-location-row{
 								<h4 class="cafe-program-heading" id="cafe-program-title">Programação</h4>
 								<div class="cafe-program-list">
 									<div class="cafe-program-item cafe-program-item--simple">
-										<time datetime="2026-09-02T09:30">9h30</time>
+										<time datetime="2026-09-02T09:00">9h</time>
 										<div>
-											<strong>Recepção</strong>
+											<strong>Café de boas-vindas</strong>
 										</div>
 									</div>
 
 									<div class="cafe-program-item cafe-program-item--president">
-										<time datetime="2026-09-02T09:45">9h45</time>
+										<time datetime="2026-09-02T09:20">9h20</time>
 										<div>
-											<strong>Abertura institucional</strong>
+											<strong>Abertura</strong>
 											<p class="cafe-program-president">
-												<span class="cafe-program-president-name">Olavo Noleto Alves</span>
+												<span class="cafe-program-president-name">Olavo Noleto</span>
 												<span class="cafe-program-president-role">Presidente&nbsp;da&nbsp;ABDI</span>
 											</p>
 										</div>
 									</div>
 
 									<div class="cafe-program-item cafe-program-item--panel">
-										<time datetime="2026-09-02T10:00">10h00</time>
+										<time datetime="2026-09-02T09:30">9h30</time>
 										<div>
 											<span class="cafe-program-label">Painel 1</span>
-											<strong>Minerais críticos no Brasil: potencial, investimentos e desafios para o desenvolvimento da cadeia</strong>
-											<p><b>Participantes:</b> IBRAM, ABPM, ADIMB e AMC</p>
-											<p><b>Moderação:</b> Jorge Boeira (ABDI)</p>
-										</div>
-									</div>
+											<strong>Minerais críticos no Brasil: recursos, investimentos e desenvolvimento da cadeia</strong>
+											<p style="margin-bottom: 14px;"><b>Moderação:</b> Jorge Boeira – ABDI</p>
 
-									<div class="cafe-program-item cafe-program-item--break">
-										<time datetime="2026-09-02T10:45">10h45</time>
-										<div>
-											<strong>Coffee Break</strong>
+											<!-- Mini-Cards de Participantes Embutidos -->
+											<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; margin-top: 15px;">
+												<div style="background: #fff; border: 1px solid #e1e6ed; padding: 12px; border-radius: 8px; border-left: 4px solid #183eff; box-shadow: 0 4px 6px rgba(0,0,0,0.02);">
+													<strong style="display: block; font-size: 14px; color: #183eff; margin:0; line-height: 1.2;">Cinthia Rodrigues</strong>
+													<span style="font-size: 12px; color: #5b6472; line-height: 1.2; display: block; margin-top: 4px;">Gerente de Pesquisa e Desenvolvimento do IBRAM</span>
+												</div>
+												<div style="background: #fff; border: 1px solid #e1e6ed; padding: 12px; border-radius: 8px; border-left: 4px solid #183eff; box-shadow: 0 4px 6px rgba(0,0,0,0.02);">
+													<strong style="display: block; font-size: 14px; color: #183eff; margin:0; line-height: 1.2;">Miguel Nery</strong>
+													<span style="font-size: 12px; color: #5b6472; line-height: 1.2; display: block; margin-top: 4px;">Diretor de Desenvolvimento Produtivo da ABPM</span>
+												</div>
+												<div style="background: #fff; border: 1px solid #e1e6ed; padding: 12px; border-radius: 8px; border-left: 4px solid #183eff; box-shadow: 0 4px 6px rgba(0,0,0,0.02);">
+													<strong style="display: block; font-size: 14px; color: #183eff; margin:0; line-height: 1.2;">Roberto Xavier</strong>
+													<span style="font-size: 12px; color: #5b6472; line-height: 1.2; display: block; margin-top: 4px;">Diretor-executivo da ADIMB</span>
+												</div>
+												<div style="background: #fff; border: 1px solid #e1e6ed; padding: 12px; border-radius: 8px; border-left: 4px solid #183eff; box-shadow: 0 4px 6px rgba(0,0,0,0.02);">
+													<strong style="display: block; font-size: 14px; color: #183eff; margin:0; line-height: 1.2;">Marisa Cesar</strong>
+													<span style="font-size: 12px; color: #5b6472; line-height: 1.2; display: block; margin-top: 4px;">Presidente do Conselho da AMC</span>
+												</div>
+											</div>
 										</div>
 									</div>
 
 									<div class="cafe-program-item cafe-program-item--panel">
-										<time datetime="2026-09-02T11:00">11h00</time>
+										<time datetime="2026-09-02T10:20">10h20</time>
 										<div>
 											<span class="cafe-program-label">Painel 2</span>
 											<strong>Da mineração à indústria: tecnologia, agregação de valor e novas cadeias produtivas</strong>
-											<p><b>Participantes:</b> WEG, Grupo Moura, SENAI/PR e Bosch</p>
-											<p><b>Moderação:</b> Jorge Boeira (ABDI)</p>
+											<p style="margin-bottom: 14px;"><b>Moderação:</b> Jorge Boeira – ABDI</p>
+
+											<!-- Mini-Cards de Participantes Embutidos -->
+											<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; margin-top: 15px;">
+												<div style="background: #fff; border: 1px solid #e1e6ed; padding: 12px; border-radius: 8px; border-left: 4px solid #183eff; box-shadow: 0 4px 6px rgba(0,0,0,0.02);">
+													<strong style="display: block; font-size: 14px; color: #183eff; margin:0; line-height: 1.2;">Wagner Setti</strong>
+													<span style="font-size: 12px; color: #5b6472; line-height: 1.2; display: block; margin-top: 4px;">Relações Governamentais da WEG</span>
+												</div>
+												<div style="background: #fff; border: 1px solid #e1e6ed; padding: 12px; border-radius: 8px; border-left: 4px solid #183eff; box-shadow: 0 4px 6px rgba(0,0,0,0.02);">
+													<strong style="display: block; font-size: 14px; color: #183eff; margin:0; line-height: 1.2;">Eduardo Abath</strong>
+													<span style="font-size: 12px; color: #5b6472; line-height: 1.2; display: block; margin-top: 4px;">Relações Governamentais do Grupo Moura</span>
+												</div>
+												<div style="background: #fff; border: 1px solid #e1e6ed; padding: 12px; border-radius: 8px; border-left: 4px solid #183eff; box-shadow: 0 4px 6px rgba(0,0,0,0.02);">
+													<strong style="display: block; font-size: 14px; color: #183eff; margin:0; line-height: 1.2;">Marcos Berton</strong>
+													<span style="font-size: 12px; color: #5b6472; line-height: 1.2; display: block; margin-top: 4px;">Gerente de Tecnologia e Inovação e pesquisador-chefe do SENAI/PR</span>
+												</div>
+												<div style="background: #f8f9fb; border: 1px dashed #c7ccd4; padding: 12px; border-radius: 8px; border-left: 4px solid #c7ccd4;">
+													<strong style="display: block; font-size: 14px; color: #667085; margin:0; line-height: 1.2;">Bosch</strong>
+													<span style="font-size: 12px; color: #667085; line-height: 1.2; display: block; margin-top: 4px;">Representante da Bosch</span>
+												</div>
+											</div>
 										</div>
 									</div>
 
-									<div class="cafe-program-item cafe-program-item--president">
-										<time datetime="2026-09-02T11:45">11h45</time>
+									<div class="cafe-program-item cafe-program-item--simple">
+										<time datetime="2026-09-02T11:00">11h</time>
 										<div>
 											<strong>Encerramento</strong>
-											<p class="cafe-program-president">
-												<span class="cafe-program-president-name">Olavo Noleto Alves</span>
-												<span class="cafe-program-president-role">Presidente&nbsp;da&nbsp;ABDI</span>
-											</p>
 										</div>
 									</div>
 								</div>
@@ -2018,68 +2287,6 @@ p.cafe-edition-location-row{
 								<span class="cafe-callout-button">Inscreva-se</span>
 							</div>
 
-							<section class="cafe-speakers-block cafe-participants-block" aria-labelledby="cafe-participants-title">
-								<h4 class="cafe-speakers-heading" id="cafe-participants-title">Participantes</h4>
-								<div class="cafe-participants-grid" aria-label="Participantes da próxima edição">
-									<article class="cafe-participant-card">
-										<span class="cafe-participant-avatar" aria-hidden="true"><span class="cafe-participant-avatar-icon"></span></span>
-										<div class="cafe-participant-copy">
-											<h5>Cinthia Rodrigues</h5>
-											<p>Gerente de Pesquisa e Desenvolvimento do IBRAM</p>
-										</div>
-									</article>
-									<article class="cafe-participant-card">
-										<span class="cafe-participant-avatar" aria-hidden="true"><span class="cafe-participant-avatar-icon"></span></span>
-										<div class="cafe-participant-copy">
-											<h5>Miguel Nery</h5>
-											<p>Diretor de Desenvolvimento Produtivo da ABPM</p>
-										</div>
-									</article>
-									<article class="cafe-participant-card">
-										<span class="cafe-participant-avatar" aria-hidden="true"><span class="cafe-participant-avatar-icon"></span></span>
-										<div class="cafe-participant-copy">
-											<h5>Roberto Xavier</h5>
-											<p>Diretor-Executivo da ADIMB</p>
-										</div>
-									</article>
-									<article class="cafe-participant-card">
-										<span class="cafe-participant-avatar" aria-hidden="true"><span class="cafe-participant-avatar-icon"></span></span>
-										<div class="cafe-participant-copy">
-											<h5>Marisa Cesar</h5>
-											<p>Presidente do Conselho da AMC</p>
-										</div>
-									</article>
-									<article class="cafe-participant-card">
-										<span class="cafe-participant-avatar" aria-hidden="true"><span class="cafe-participant-avatar-icon"></span></span>
-										<div class="cafe-participant-copy">
-											<h5>Wagner Setti</h5>
-											<p>Relações Governamentais da WEG</p>
-										</div>
-									</article>
-									<article class="cafe-participant-card">
-										<span class="cafe-participant-avatar" aria-hidden="true"><span class="cafe-participant-avatar-icon"></span></span>
-										<div class="cafe-participant-copy">
-											<h5>Eduardo Abath</h5>
-											<p>Relações Governamentais do Grupo Moura</p>
-										</div>
-									</article>
-									<article class="cafe-participant-card">
-										<span class="cafe-participant-avatar" aria-hidden="true"><span class="cafe-participant-avatar-icon"></span></span>
-										<div class="cafe-participant-copy">
-											<h5>Marcos Berton</h5>
-											<p>Gerente de Tecnologia e Inovação e Pesquisador-Chefe do SENAI/PR</p>
-										</div>
-									</article>
-									<article class="cafe-participant-card cafe-participant-card--pending">
-										<span class="cafe-participant-status">A confirmar</span>
-										<span class="cafe-participant-avatar" aria-hidden="true"><span class="cafe-participant-avatar-icon"></span></span>
-										<div class="cafe-participant-copy">
-											<h5>Bosch</h5>
-											<p>Representante a confirmar</p>
-										</div>
-									</article>
-								</div>
-							</section>
 						</div>
 					</article>
 				</div>
